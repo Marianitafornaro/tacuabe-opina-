@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacuabé Opin@</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tacuabé Opin@</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#opinar">Opinar</a>
+            <a href="#muro">Muro</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="seccion">
+        <h2>Bienvenid@ a Tacuabé Opin@</h2>
+        <p>Un espacio para compartir tus opiniones, sugerencias y reclamos sobre el liceo, los profesores y la institución.</p>
+        <p>Podés publicar de forma anónima o con tu nombre. ¡Tu voz cuenta!</p>
+    </section>
+
+    <section id="opinar" class="seccion">
+        <h2>Dejá tu opinión</h2>
+        <form id="opinionForm">
+            <label for="nombre">Nombre (opcional):</label>
+            <input type="text" id="nombre" placeholder="Anónimo si lo dejás vacío">
+
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" required>
+                <option value="profesores">Profesores</option>
+                <option value="adscriptos">Adscriptos</option>
+                <option value="infraestructura">Infraestructura</option>
+                <option value="institución">Institución</option>
+            </select>
+
+            <label for="mensaje">Tu opinión o reclamo:</label>
+            <textarea id="mensaje" rows="4" placeholder="Escribí tu comentario aquí..." required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="muro" class="seccion">
+        <h2>Muro de Opiniones</h2>
+        <div id="opinionesContainer"></div>
+    </section>
+
+    <section id="contacto" class="seccion">
+        <h2>Contacto</h2>
+        <p><strong>Liceo Tacuabé</strong></p>
+        <p>Email: <a href="mailto:liceotacuabe@gmail.com">liceotacuabe@gmail.com</a></p>
+        <p>Desarrollado por estudiantes de Ciencias de la Computación – Prueba Semestral.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Tacuabé Opin@ | Proyecto estudiantil</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
